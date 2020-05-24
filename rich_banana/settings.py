@@ -86,8 +86,6 @@ DATABASES = {
     }
 }
 
-DATABASE_URL = 'postgresql://zhabs:H5pd1O3Fbv9h0xBiiHfh@rds-postgresql-banana.cgiahcuou03k.ca-central-1.rds.amazonaws.com:5432/banana?sslrootcert=certs/rds-ca-2019-root.pem&sslmode=require&encrypt=true'
-
 
 
 # Password validation
