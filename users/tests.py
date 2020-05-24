@@ -19,7 +19,7 @@ class UserManagersTests(TestCase):
             User.objects.create_user()
         # TypeError without password
         with self.assertRaises(TypeError):
-            User.objects.create_user(phone='')
+            User.objects.create_user(phone='123')
         # ValueError with blank phone Number
         with self.assertRaises(ValueError):
             User.objects.create_user(phone='', password='foo')
@@ -34,5 +34,5 @@ class UserManagersTests(TestCase):
         # username does not exist for AbstractBaseUser
         with self.assertRaises(AttributeError):
             admin_user.username
-        with self.assertRaises(ValueError):
+        with self.assertRaises(TypeError):
             User.objects.create_superuser(phone='123456', password='foo', is_superuser=False)
