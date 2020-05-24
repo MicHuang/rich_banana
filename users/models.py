@@ -71,7 +71,8 @@ class MyUser(AbstractBaseUser, PermissionsMixin):
 
     date_of_birth = models.DateField(
         verbose_name = 'Birthday',
-        null = True
+        null = True,
+        blank = True
     )
 
     email = models.EmailField(

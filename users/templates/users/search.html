@@ -1,0 +1,12 @@
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form class="form-group" action="{% url 'users:search' %}" method="post">
+{% csrf_token %}
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Phone Number</span>
+    </div>
+    <input type="text" class="form-control" name="phone">
+  </div>
+  <button type="submit">Search</button>
+</form>
