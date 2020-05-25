@@ -1,12 +1,27 @@
-{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+{% extends "users/base.html" %}
 
-<form class="form-group" action="{% url 'users:search' %}" method="post">
-{% csrf_token %}
-  <div class="input-group input-group-sm mb-3">
-    <div class="input-group-prepend">
-      <span class="input-group-text" id="inputGroup-sizing-sm">Phone Number</span>
+{% block title %}
+<title>Search</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <br>
+  <div class="row">
+    <div class="col-md-12 col-sm-4 mt-3">
+      {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
     </div>
-    <input type="text" class="form-control" name="phone">
+    <form class="form-group col-md-4 col-sm-10" action="{% url 'users:search' %}" method="post">
+    {% csrf_token %}
+
+      <div class="input-group mb-3">
+        <input type="search" class="form-control" name="phone" placeholder="Phone number...">
+        <button class="btn" type="submit"><i data-feather="search"></i></button>
+      </div>
+    </form>
+
   </div>
-  <button type="submit">Search</button>
-</form>
+</div>
+
+{% endblock %}

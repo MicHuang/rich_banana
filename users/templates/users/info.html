@@ -1,5 +1,27 @@
-<h1>User {{ user.phone }}</h1>
-<ul>
-  <li>User Points: {{user.points}}</li>
-</ul>
-<p><a href="{% url 'users:search' %}">Back</a> to search page.</p>
+{% extends "users/base.html" %}
+
+{% block title %}
+<title>Info</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 mt-4">
+      {% if user.first_name %}<p>Welcome {{ user.first_name }}</p>{% endif %}
+    </div>
+    <div class="col-md-4 col-sm-10">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">You have: {{user.points}} point{{ user.points|pluralize }}</li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <div>
+    <p><a href="{% url 'users:search' %}">Back</a> to search page.</p>
+  </div>
+</div>
+
+
+{% endblock %}
