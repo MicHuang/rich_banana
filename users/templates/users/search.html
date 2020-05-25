@@ -16,7 +16,7 @@
     {% csrf_token %}
 
       <div class="input-group mb-3">
-        <input type="number" class="form-control" name="phone" placeholder="Phone number...">
+        <input type="tel" class="form-control" name="phone" placeholder="{% blocktrans %}Phone number{% endblocktrans %}...">
         <button class="btn" type="submit"><i data-feather="search"></i></button>
       </div>
     </form>

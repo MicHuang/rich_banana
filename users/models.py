@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import (
     BaseUserManager, AbstractBaseUser, PermissionsMixin
 )
+from django.utils.translation import ugettext_lazy as _
 from django.utils import timezone
 
 # Create your models here.
@@ -12,7 +13,7 @@ class MyUserManager(BaseUserManager):
         Creates and saves a User with the given phone number and pw
         """
         if not phone:
-            raise ValueError('Phone can not be empty')
+            raise ValueError(_('Phone can not be empty'))
         user = self.model(
             phone = phone,
             first_name = first_name,
@@ -52,38 +53,38 @@ class MyUserManager(BaseUserManager):
 
 class MyUser(AbstractBaseUser, PermissionsMixin):
     phone = models.CharField(
-        verbose_name = 'Phone Number',
+        verbose_name = _('Phone Number'),
         max_length = 20,
         unique = True
     )
 
     first_name = models.CharField(
-        verbose_name = 'First Name',
+        verbose_name = _('First Name'),
         max_length = 20,
         blank = True
     )
 
     last_name = models.CharField(
-        verbose_name = 'Last Name',
+        verbose_name = _('Last Name'),
         max_length = 20,
         blank = True
     )
 
     date_of_birth = models.DateField(
-        verbose_name = 'Birthday',
+        verbose_name = _('Birthday'),
         null = True,
         blank = True
     )
 
     email = models.EmailField(
-        verbose_name = 'Email Address',
+        verbose_name = _('Email Address'),
         max_length = 255,
         null = True,
         blank = True
     )
 
     address = models.TextField(
-        verbose_name = 'Address',
+        verbose_name = _('Address'),
         blank = True
     )
 
