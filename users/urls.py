@@ -6,5 +6,5 @@ urlpatterns = [
     # ex: /users/search/
     path('search/', views.search, name='search'),
     # ex: /users/5
-    path('<int:user_id>', views.userinfo, name='info'),
+    path('<int:pk>', views.UserView.as_view(), name='info'),
 ]

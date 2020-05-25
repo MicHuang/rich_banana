@@ -1,12 +1,14 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
+from django.views import generic
 from django.shortcuts import render, get_object_or_404
 from .models import MyUser
 
 # Create your views here.
-def userinfo(res, user_id):
-    user = get_object_or_404(MyUser, pk=user_id)
-    return render(res, 'users/info.html', {'user': user})
+class UserView(generic.DetailView):
+    model = MyUser
+    template_name = 'users/info.html'
+    context_object_name = 'user'
 
 def search(res):
     if res.method == 'POST':
