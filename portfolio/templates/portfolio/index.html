@@ -1,0 +1,21 @@
+{% extends 'users/base.html' %}
+
+{% block title %}
+<title>Mickey's Home</title>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+
+  <div class="row mt-4">
+    <h3>Mickey's homepage</h3>
+  </div>
+
+  <div class="row">
+    <ul>
+      <li><a href="{% url 'users:search' %}">User points lookup.</a></li>
+    </ul>
+  </div>
+
+</div>
+{% endblock %}

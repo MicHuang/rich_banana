@@ -11,7 +11,11 @@
   <br>
   <div class="row">
     <div class="col-md-12 col-sm-4 mt-3">
-      {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+      {% if error_message %}
+      <div class="alert alert-danger col-md-4 col-sm-4 pb-0" role="alert">
+        <p><strong>{{ error_message }}</strong></p>
+      </div>
+      {% endif %}
     </div>
     <form class="form-group col-md-4 col-sm-10" action="{% url 'users:search' %}" method="post">
     {% csrf_token %}

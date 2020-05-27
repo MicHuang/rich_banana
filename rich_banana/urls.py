@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from register import views as registerView
+from portfolio import views as portfolioView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/', registerView.register, name='register'),
     path('', include('django.contrib.auth.urls')),
-    path('users/', include('users.urls'))
+    path('users/', include('users.urls')),
+    path('', portfolioView.index, name='home')
 ]
