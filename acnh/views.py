@@ -10,8 +10,8 @@ def index(req):
         url = 'http://acnhapi.com/v1/fish/%s' % fish_name
         response = requests.get(url)
         fish_data = response.json()
-        name_set = fish_data['name']
+        name_set = fish_data['name']['name-CNzh']
     return render(req, 'acnh/index.html', {
-        'fish_name': name_set['name-CNzh'],
+        'fish_name': name_set,
         'fish_data': fish_data
         })
