@@ -23,5 +23,6 @@ urlpatterns = [
     path('register/', registerView.register, name='register'),
     path('', include('django.contrib.auth.urls')),
     path('users/', include('users.urls')),
+    path('acnh/', include('acnh.urls')),
     path('', portfolioView.index, name='home')
 ]

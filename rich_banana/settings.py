@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'register.apps.RegisterConfig',
     'portfolio.apps.PortfolioConfig',
+    'acnh.apps.AcnhConfig',
     'crispy_forms'
 ]
 
