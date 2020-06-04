@@ -1,9 +1,17 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
+
+import Header from './layout/header';
+import Dashboard from './acnh-items/dashboard';
 
 class App extends Component{
   render(){
-    return <h1>React App</h1>
+    return(
+      <Fragment>
+        <Header />
+        <Dashboard />
+      </Fragment>
+    )
   }
 }
 

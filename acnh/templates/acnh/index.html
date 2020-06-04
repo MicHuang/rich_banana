@@ -7,30 +7,6 @@
 {% block content %}
 <div class="container">
   <div class="row">
-    <form class="form-group" method="get">
-      <input type="text" name="fish_name">
-      <button type="submit" class="btn btn-success">Search</button>
-    </form>
-  </div>
-  <div class="row">
-    <table class="table">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Name</th>
-          <th scope="col">Price</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="col">{{ fish_data.id }}</th>
-          <td>{{ fish_name }}</td>
-          <td>{{ fish_data.price }}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="row">
     <div id="app"></div>
   </div>
 </div>
