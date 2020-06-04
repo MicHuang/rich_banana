@@ -37,10 +37,10 @@ class Fish extends Component {
       return <div>Loading...</div>;
     } else {
       return(
-        <div>
+        <div className="row mt-3" >
         {Object.keys(allFish).map((key) => (
-          <div className="card" key={key}>
-            <img className="card-img-top" src={allFish[key]["image_uri"]} />
+          <div className="card bg-light col-lg-2 col-md-3" key={key}>
+            <img className="card-img-top" src={allFish[key]["icon_uri"]} />
             <div className="card-body">
               <h5 className="card-title">{allFish[key].name["name-EUen"]}</h5>
               <h6 className="card-title">{allFish[key].name["name-CNzh"]}</h6>

@@ -4,7 +4,7 @@ import Fish from './fish';
 export default function Dashboard() {
   return (
     <Fragment>
-      <Fish />
+        <Fish />
     </Fragment>
   )
 }
