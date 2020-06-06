@@ -14,10 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import path, include
 from rest_framework import routers
 from register import views as registerView
-from portfolio import views as portfolioView
 from users import views as usersView
 
 router = routers.DefaultRouter()
@@ -29,7 +29,8 @@ urlpatterns = [
     path('', include('django.contrib.auth.urls')),
     path('users/', include('users.urls')),
     path('acnh/', include('acnh.urls')),
-    path('', portfolioView.index, name='home'),
+    path('', include('portfolio.urls')),
     path('api/', include(router.urls)),
     path('api-auth', include('rest_framework.urls', namespace='rest_framework'))
 ]
+urlpatterns += staticfiles_urlpatterns()

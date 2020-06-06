@@ -1,0 +1,64 @@
+nav {
+  background-color: #E0EBE8;
+}
+
+nav li a {
+  color: #45b29a;
+}
+
+nav li a:hover{
+  color: #21564b;
+}
+
+nav li a.active{
+  color: #21564b;
+}
+
+#head-logo {
+  border-radius: 60px;
+  overflow: hidden;
+  width: 72px;
+  height: 72px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+#head-logo span {
+  display: block;
+}
+
+#head-logo .mask {
+  margin-top: 6px;
+  background: url('./img/PixelCharacter.png');
+  background-size: 62px 62px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 72px;
+  width: 72px;
+  z-index: 1000;
+}
+
+#head-logo .behind {
+  background: #f6f9f8;
+  position: absolute;
+  height: 72px;
+  width: 72px;
+  z-index: 800;
+}
+
+.title {
+  background-color: #E0EBE8;
+  padding: 10px 0px;
+  height: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.title h3{
+  font-family:'Sofia';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}

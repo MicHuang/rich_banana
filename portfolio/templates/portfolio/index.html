@@ -1,21 +1,49 @@
-{% extends 'users/base.html' %}
+{% extends 'base.html' %}
 
 {% block title %}
 <title>Mickey's Home</title>
 {% endblock %}
 
 {% block content %}
-<div class="container">
 
-  <div class="row mt-4">
-    <h3>Mickey's homepage</h3>
-  </div>
+<nav class="navbar navbar-expand-sm">
+  <div class="container">
+    <div class="navbar-brand" id="head-logo">
+      <a href="{% url 'portfolio:home' %}">
+        <span class="mask"></span>
+        <span class="behind"></span>
+      </a>
+    </div>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
 
-  <div class="row">
-    <ul>
-      <li><a href="{% url 'users:search' %}">User points lookup.</a></li>
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a href="#home" class="nav-link">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Work</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a href="#home" class="nav-link dropdown-toggle id=" navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"">Notes</a>
+          <div class=" dropdown-menu" aria-labelledby="navbarDropdown">
+            <a href="{% url 'users:search' %}" class="dropdown-item">User points lookup</a>
+    </div>
+    </li>
+
     </ul>
   </div>
+  </div>
+</nav>
 
+<div class="title">
+  <h3>I'm Yiqi</h3>
 </div>
+
+
 {% endblock %}
