@@ -27,10 +27,59 @@
 </head>
 
 <body>
+  <div class="page-container">
 
-  {% block content %}
-  <h1>Hello, world!</h1>
-  {% endblock %}
+
+    <nav class="navbar navbar-expand-sm">
+      <div class="container">
+        <div class="navbar-brand" id="head-logo">
+          <a href="{% url 'portfolio:home' %}">
+            <span class="mask"></span>
+            <span class="behind"></span>
+          </a>
+        </div>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <i data-feather="align-justify"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+              <a href="{% url 'portfolio:home' %}" class="nav-link {{about}} ">About</a>
+            </li>
+
+            <li class=" nav-item">
+              <a href="{% url 'portfolio:work' %}" class="nav-link {{work}}">Work</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="#home" class="nav-link dropdown-toggle id=" navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"">Notes</a>
+            <div class=" dropdown-menu" aria-labelledby="navbarDropdown">
+                <a href="{% url 'users:search' %}" class="dropdown-item">User points lookup</a>
+        </div>
+        </li>
+
+        </ul>
+      </div>
+  </div>
+  </nav>
+
+  <div class="main">
+    {% block content %}
+    <h1>Hello, world!</h1>
+    {% endblock %}
+  </div>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2020 <a href="{% url 'portfolio:home' %}">Yiqi</a></p>
+    </div>
+  </footer>
+
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -40,6 +89,7 @@
   <script>
     feather.replace()
   </script>
+  </div>
 </body>
 
 </html>

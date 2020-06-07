@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
 # Create your views here.
-def index(res):
-    return render(res, 'portfolio/index.html', {})
+def index(req):
+    return render(req, 'portfolio/index.html', {'about': 'active'})
+
+def work(req):
+    return render(req, 'portfolio/work.html', {'work': 'active'})
