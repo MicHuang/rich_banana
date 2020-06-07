@@ -74,6 +74,7 @@ nav li a.active{
 }
 
 .content a{
+  color: #fff;
   margin-top: 2rem;
 }
 
@@ -87,6 +88,11 @@ nav li a.active{
 
 .mao{
   background-color: #f76160;
+}
+
+.mao a {
+  background-color: #dc3545;
+  border-color: #dc3545;
 }
 
 .acnh{
