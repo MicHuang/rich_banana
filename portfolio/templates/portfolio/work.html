@@ -6,8 +6,39 @@
 
 {% block content %}
 
-<div class="title">
-  <h3>Work</h3>
+<div class="content-block title">
+  <div class="content">
+    <h3>Work</h3>
+  </div>
+</div>
+
+<div class="content-block blog">
+  <div class="content">
+    <h3>Vanilla JS Blog</h3>
+    <a href="http://michuang.github.io/" target="_blank" type="button" class="btn btn-success">View Demo</a>
+  </div>
+</div>
+
+<div class="content-block mao">
+  <div class="content">
+    <h3>MAO glass retailer demo</h3>
+    <a href="http://dev.micown.com/" target="_blank" type="button" class="btn btn-danger">View Demo</a>
+  </div>
+</div>
+
+<div class="content-block acnh">
+  <div class="content">
+    <h3>Animal Crossing NH</h3>
+    <a href="{% url 'acnh:index' %}" target="_blank" type="button" class="btn btn-dark">View Demo</a>
+  </div>
+</div>
+
+<div class="content-block userInfo">
+  <div class="content">
+    <h3>User Info Lookup Tool</h3>
+    <a href="{% url 'users:search' %}" type="button" class="btn btn-warning">View Demo</a>
+  </div>
+
 </div>
 
 {% endblock %}

@@ -57,18 +57,44 @@ nav li a.active{
   text-align: center;
 }
 
-.title {
-  background-color: #E0EBE8;
+.content-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px 0px;
   height: 400px;
-  position: relative;
 }
 
-.title h3{
+.content-block h3{
   font-family:'Sofia';
-  position: absolute;
-  left: 50%;
-  top: 50%;
+}
+
+.content {
+  text-align: center;
+}
+
+.content a{
+  margin-top: 2rem;
+}
+
+.title {
+  background-color: #E0EBE8;
+}
+
+.blog{
+  background-color: #7dcc93;
+}
+
+.mao{
+  background-color: #f76160;
+}
+
+.acnh{
+  background-color: #31355b;
+}
+
+.userInfo{
+  background-color: #f8c687;
 }
 
 .main{
@@ -91,4 +117,13 @@ nav li a.active{
   height: 60px;
   line-height: 60px;
   text-align: left;
+}
+
+.footer a {
+  color: black
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: #21564b;
 }
