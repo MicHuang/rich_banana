@@ -67,6 +67,8 @@ nav li a.active{
 
 .content-block h3{
   font-family:'Sofia';
+  margin: 0 3rem;
+  color: white;
 }
 
 .content {
@@ -78,23 +80,33 @@ nav li a.active{
   margin-top: 2rem;
 }
 
+.content p{
+  margin: 1rem 3rem;
+  max-width: 30rem;
+  color: whitesmoke;
+}
+
 .title {
   background-color: #E0EBE8;
 }
 
-.blog{
-  background-color: #7dcc93;
-}
-
-.mao{
-  background-color: #f76160;
+.title h3 {
+  color: black;
 }
 
 .acnh{
-  background-color: #31355b;
+  background-color: #7dcc93;
 }
 
 .userInfo{
+  background-color: #f76160;
+}
+
+.mao{
+  background-color: #31355b;
+}
+
+.blog{
   background-color: #f8c687;
 }
 

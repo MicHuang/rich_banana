@@ -21,7 +21,7 @@ def search(res):
     if res.method == 'POST':
         try:
             user = get_object_or_404(MyUser, phone=res.POST['phone'])
-        except Exception as e:
+        except:
             # Redisplay the search form with error_message
             return render(res, 'users/search.html', {
                 'error_message': "User not exist."
