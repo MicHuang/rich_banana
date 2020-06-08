@@ -18,13 +18,15 @@ class UserViewSet(viewsets.ModelViewSet):
     serializer_class = UserSerializer
 
 def search(res):
+    mode = res.GET.get('mode', '')
     if res.method == 'POST':
         try:
             user = get_object_or_404(MyUser, phone=res.POST['phone'])
         except:
             # Redisplay the search form with error_message
             return render(res, 'users/search.html', {
-                'error_message': "User not exist."
+                'error_message': "User not exist.",
+                'mode': mode
             })
         else: return HttpResponseRedirect(reverse('users:info', args=(user.id,)))
-    else: return render(res, 'users/search.html', {})
+    else: return render(res, 'users/search.html', {'mode': mode})

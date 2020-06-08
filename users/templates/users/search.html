@@ -10,7 +10,7 @@
 <div class="container">
   <br>
   <div class="row">
-    <div class="col-md-12 col-sm-4 mt-3">
+    <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
       {% if error_message %}
       <div class="alert alert-danger col-md-4 col-sm-4 pb-0" role="alert">
         <p><strong>{{ error_message }}</strong></p>
@@ -27,6 +27,9 @@
     </form>
 
   </div>
+  {% if mode %}
+  <div style="color:lightgray">// Use 1234567 for testing.</div>
+  {% endif %}
 </div>
 
 {% endblock %}
