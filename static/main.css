@@ -78,6 +78,7 @@ nav li a.active{
 .content a{
   color: #fff;
   margin-top: 2rem;
+  -webkit-appearance: none;
 }
 
 .content p{
