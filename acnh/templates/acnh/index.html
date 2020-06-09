@@ -5,6 +5,8 @@
 {% endblock %}
 
 {% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'acnh.css'%}">
 <div id="app"></div>
 {% load static %}
 <script src="{% static 'acnh/main.js' %}"></script>

@@ -37,19 +37,27 @@ class Fish extends Component {
       return <div>Loading...</div>;
     } else {
       return(
-        <div className="row mt-3" >
-        {Object.keys(allFish).map((key) => (
-          <div className="card bg-light col-lg-2 col-md-3" key={key}>
-            <img className="card-img-top" src={allFish[key]["icon_uri"]} />
-            <div className="card-body">
-              <h5 className="card-title">{allFish[key].name["name-EUen"]}</h5>
-              <h6 className="card-title">{allFish[key].name["name-CNzh"]}</h6>
-              <p>${allFish[key].price}</p>
-            </div>
-          </div>
-        ))}
+        <div className="row item-container">
+          <table className="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              {Object.keys(allFish).map((key) => (
+                <tr key={key}>
+                  <th scope="row"><img className="card-img-top" src={allFish[key]["icon_uri"]} /></th>
+                  <td>{allFish[key].name["name-EUen"]}</td>
+                  <td>${allFish[key].price}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
-          );
+      );
     }
   }
 }
