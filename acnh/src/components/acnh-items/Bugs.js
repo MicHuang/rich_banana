@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Fish extends Component {
+class Bugs extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -11,7 +11,7 @@ class Fish extends Component {
   }
 
   componentDidMount(){
-    fetch('http://acnhapi.com/v1/fish')
+    fetch('http://acnhapi.com/v1/bugs/')
       .then(res => res.json())
       .then(
         (result) => {
@@ -37,10 +37,10 @@ class Fish extends Component {
       return <div>Loading...</div>;
     } else {
       return(
-        <div name="fish" onClick={this.props.changeItem.bind(this, items)}>Fish</div>
+        <div name="bugs" onClick={this.props.changeItem.bind(this, items)}>Bugs</div>
       );
     }
   }
 }
 
-export default Fish;
+export default Bugs;

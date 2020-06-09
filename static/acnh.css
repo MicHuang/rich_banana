@@ -1,7 +1,11 @@
-.card-img-top {
-    height: 50px;
-    width: 50px;
+.tab-container {
+    margin-top: 2vh;
 }
+
 .table td{  
     vertical-align: middle;
+}
+
+.table thead tr:nth-child(1){
+    border-top: hidden;
 }
