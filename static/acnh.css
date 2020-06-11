@@ -7,4 +7,5 @@
 }
 
 .table thead tr:nth-child(1){
+    border-top: hidden;
 }
