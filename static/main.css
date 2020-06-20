@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .page-container{
   position: relative;
   min-height: 100vh;
@@ -17,6 +20,13 @@ nav li a:hover{
 
 nav li a.active{
   color: #21564b;
+}
+
+.nav-fix-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 999;
 }
 
 #head-logo {
@@ -89,10 +99,40 @@ nav li a.active{
 
 .title {
   background-color: #E0EBE8;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title .up-buffer {
+  flex: 1;
+}
+
+.title .content {
+  flex: 1;
 }
 
 .title h3 {
   color: black;
+}
+
+.title i{
+  flex: 1;
+}
+
+.title .down-arrow {
+  color: #a3c2ba;
+}
+.title .down-arrow:hover {
+  color: #31355b;
+}
+
+#project {
+  background-color: #E0EBE8;
+}
+
+#project h3 {
+  color: black
 }
 
 .acnh{
