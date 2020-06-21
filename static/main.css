@@ -85,6 +85,11 @@ nav li a.active{
   text-align: center;
 }
 
+.content h5 {
+  font-family: 'Indie Flower', cursive;
+  color: #31355b;
+}
+
 .content a{
   color: #fff;
   margin-top: 2rem;
@@ -115,11 +120,6 @@ nav li a.active{
 
 .title h3 {
   color: black;
-}
-
-.title h5 {
-  font-family: 'Indie Flower', cursive;
-  color: #31355b;
 }
 
 .title i{
