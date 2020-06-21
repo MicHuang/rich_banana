@@ -76,7 +76,7 @@ nav li a.active{
 }
 
 .content-block h3{
-  font-family:'Sofia';
+
   margin: 0 3rem;
   color: white;
 }
@@ -109,11 +109,17 @@ nav li a.active{
 }
 
 .title .content {
+  font-family:'Sofia';
   flex: 1;
 }
 
 .title h3 {
   color: black;
+}
+
+.title h5 {
+  font-family: 'Indie Flower', cursive;
+  color: #31355b;
 }
 
 .title i{
@@ -128,6 +134,7 @@ nav li a.active{
 }
 
 #project {
+  font-family:'Sofia';
   background-color: #E0EBE8;
 }
 
