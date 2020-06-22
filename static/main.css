@@ -119,7 +119,7 @@ nav li a.active{
 }
 
 .title h3 {
-  color: black;
+  color: #31355b;
 }
 
 .title i{
@@ -139,7 +139,24 @@ nav li a.active{
 }
 
 #project h3 {
-  color: black
+  color: #31355b;
+}
+
+#about{
+  background-color: #FFF;
+}
+
+#about p{
+  color: #31355b;
+}
+
+#about h3 {
+  font-family:'Sofia';
+  color: #31355b;
+}
+
+#about hr {
+  max-width: 80%;
 }
 
 .acnh{
