@@ -32,7 +32,7 @@
 
     {% block navbar %}
     
-    <nav class="navbar navbar-expand-sm nav-fix-top">
+    <nav class="navbar navbar-expand-sm nav-fix-top" id="navbar">
       <div class="container">
         <div class="navbar-brand" id="head-logo">
           <a href="{% url 'portfolio:home' %}">
@@ -90,6 +90,8 @@
     <script>
       feather.replace()
     </script>
+    <!-- custome JS -->
+    <script src="{% static 'main.js' %}"></script>
   </div>
 </body>
 

@@ -8,6 +8,7 @@ html {
 
 nav {
   background-color: #E0EBE8;
+  transition: top 0.3s;
 }
 
 nav li a {
