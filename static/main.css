@@ -211,5 +211,15 @@ nav li a.active{
 @media (min-width: 900px){
   .about {
     display: flex;
+    flex-flow: row wrap;
   }
+
+  .right {
+    width: 100%;
+  }
+
+  .progress {
+    width: 100%;
+  }
+
 }
