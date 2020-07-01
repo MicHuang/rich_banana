@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 
@@ -96,15 +97,10 @@
   <div class="content">
     <h3>Animal Crossing NH</h3>
     <p>Toy React project for Animal Crossing: New Horizons.</p>
+    <div class="demoImg">
+      <img src="{% static 'img/acnh_demo.jpg' %}" alt="acnh">
+    </div>
     <a href="{% url 'acnh:index' %}" target="_blank" type="button" class="btn btn-success">View Demo</a>
-  </div>
-</div>
-
-<div class="content-block userInfo">
-  <div class="content">
-    <h3>User Info Lookup Tool</h3>
-    <p>Single page web app provide real customers an interface to check their in store points. Built with Django as backend and API with user info as well as admin portal to manage users. PostgreSQL for the database runing on AWS RDs. </p>
-    <a href="{% url 'users:search' %}?mode=demo" type="button" class="btn btn-danger">View Demo</a>
   </div>
 </div>
 
@@ -112,6 +108,9 @@
   <div class="content">
     <h3>MAO glasses retailer partial</h3>
     <p>A glasses online store with JS and handlebars hosted with Bigcommerce. The website is unavailable now but still have a demo of the lense selection section.</p>
+    <div class="demoImg">
+      <img src="{% static 'img/mao_demo.jpg' %}" alt="mao">
+    </div>
     <a href="http://dev.micown.com/" target="_blank" type="button" class="btn btn-dark">View Demo</a>
   </div>
 </div>
@@ -121,7 +120,18 @@
   <div class="content">
     <h3>Personal Blog</h3>
     <p>Simple blog page using Vanilla JS and bootstrap, hosted on github page with a python blog empty-template generator.</p>
+    <div class="demoImg">
+      <img src="{% static 'img/blog_demo.jpg' %}" alt="blog">
+    </div>
     <a href="http://michuang.github.io/" target="_blank" type="button" class="btn btn-warning">View Demo</a>
+  </div>
+</div>
+
+<div class="content-block userInfo">
+  <div class="content">
+    <h3>User Info Lookup Tool</h3>
+    <p>Single page web app provide real customers an interface to check their in store points. Built with Django as backend and API with user info as well as admin portal to manage users. PostgreSQL for the database runing on AWS RDs. </p>
+    <a href="{% url 'users:search' %}?mode=demo" type="button" class="btn btn-danger">View Demo</a>
   </div>
 </div>
 
