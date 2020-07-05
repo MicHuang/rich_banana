@@ -27,14 +27,14 @@ export default function Dashboard() {
       <div className="tab-container">
         <ul className="nav nav-tabs">
           <li className="nav-item">
-              <div className="nav-link" onClick={onClick} id="fish">
+              <a className="nav-link" onClick={onClick} id="fish">
                 <Fish changeItem={changItem}/>
-              </div>            
+              </a>            
           </li>
           <li className="nav-item" >
-          <div className="nav-link" onClick={onClick} id="bugs">
+          <a className="nav-link" onClick={onClick} id="bugs">
                 <Bugs changeItem={changItem}/>
-              </div>    
+              </a>    
           </li>
         </ul>
       </div>

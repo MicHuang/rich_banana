@@ -37,7 +37,7 @@ class Bugs extends Component {
       return <div>Loading...</div>;
     } else {
       return(
-        <div name="bugs" onClick={this.props.changeItem.bind(this, items)}>Bugs</div>
+        <div name="bugs" onClick={this.props.changeItem.bind(this, items)} style={{cursor: "pointer"}}>Bugs</div>
       );
     }
   }

@@ -37,7 +37,7 @@ class Fish extends Component {
       return <div>Loading...</div>;
     } else {
       return(
-        <div name="fish" onClick={this.props.changeItem.bind(this, items)}>Fish</div>
+        <div name="fish" onClick={this.props.changeItem.bind(this, items)} style={{cursor: "pointer"}}>Fish</div>
       );
     }
   }
