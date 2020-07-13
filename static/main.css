@@ -195,6 +195,10 @@ nav li a.active{
   background-color: grey
 }
 
+.timer {
+  background-color: #7dcc93;
+}
+
 .main{
   padding-bottom: 60px;
 }
