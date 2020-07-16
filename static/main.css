@@ -76,8 +76,7 @@ nav li a.active{
   min-height: 400px;
 }
 
-.content-block h3{
-
+.content-block h3, .project-block h3{
   margin: 0 3rem;
   color: white;
 }
@@ -175,28 +174,39 @@ nav li a.active{
   line-height: 10px;
 }
 
-.acnh{
+.project-block {
   background-color: #7dcc93;
+  padding: 40px 10px;
+  min-height: 400px;
 }
 
-.userInfo{
-  background-color: #f76160;
+.bordered{
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+
+.acnh{
+  
 }
 
 .mao{
-  background-color: #31355b;
+  
 }
 
 .blog{
-  background-color: #f8c687;
+  
+}
+
+.userInfo{
+  
 }
 
 .thumbnail-grabber {
-  background-color: grey
+  
 }
 
 .timer {
-  background-color: #7dcc93;
+  
 }
 
 .main{
@@ -248,7 +258,7 @@ figure:hover img {
 }
 
 
-@media (min-width: 900px){
+@media (min-width: 768px){
   .about {
     display: flex;
     flex-flow: row wrap;
@@ -270,6 +280,15 @@ figure:hover img {
   .about .right {
     margin: 50px auto;
     padding-left: 80px;
+  }
+
+  .project-block {
+    background-color: #7dcc93;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 10px;
+    min-height: 400px;
   }
 
 
