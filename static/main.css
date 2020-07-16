@@ -139,31 +139,27 @@ nav li a.active{
   color: #31355b;
 }
 
-
-#project {
+.section-title {
   font-family:'Sofia';
   background-color: #FFF;
 }
 
-#project h3 {
+.section-title h3 {
   color: #31355b;
 }
 
+.section-title hr {
+  max-width: 200px;
+}
+
+
 #about{
   background-color: #FFF;
+  min-height: 100vh;
 }
 
 #about p{
   color: #31355b;
-}
-
-#about h3 {
-  font-family:'Sofia';
-  color: #31355b;
-}
-
-#about hr {
-  max-width: 70%;
 }
 
 .about .right {
@@ -176,14 +172,21 @@ nav li a.active{
 
 .project-block {
   background-color: #7dcc93;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   padding: 40px 10px;
   min-height: 400px;
 }
 
-.bordered{
+.project-block > * {
+  margin: 3em 0;
+}
+
+/* .bordered{
   border: 1px #ccc solid;
   padding: 10px;
-}
+} */
 
 .acnh{
   
@@ -207,6 +210,10 @@ nav li a.active{
 
 .timer {
   
+}
+
+.bottom {
+  background-color: #31355b;
 }
 
 .main{
@@ -282,13 +289,8 @@ figure:hover img {
     padding-left: 80px;
   }
 
-  .project-block {
-    background-color: #7dcc93;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 40px 10px;
-    min-height: 400px;
+  .project-block p {
+    height: 100px;
   }
 
 
