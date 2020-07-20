@@ -115,7 +115,7 @@
 <div class="project-block">
 
   <!-- Animao Crossing Project -->
-  <div class="content acnh">
+  <div class="content acnh bordered">
     <h3>Animal Crossing NH</h3>
     <p>Toy React project for Animal Crossing: New Horizons.</p>
     <figure>
@@ -125,7 +125,7 @@
   </div>
 
   <!-- Glass Retailer Website Project -->
-  <div class="content mao">
+  <div class="content mao bordered">
     <h3>MAO glasses retailer partial</h3>
     <p>A glasses online store with JS and handlebars hosted with Bigcommerce. The website is unavailable now but still have a demo of the lense selection section.</p>
     <figure>
@@ -135,7 +135,7 @@
   </div>
 
   <!-- Personal Blog Project -->
-  <div class="content blog">
+  <div class="content blog bordered">
     <h3>Personal Blog</h3>
     <p>Simple blog page using Vanilla JS and bootstrap, hosted on github page with a python blog empty-template generator.</p>
     <figure>
@@ -145,26 +145,31 @@
   </div>
 
   <!-- User Info Lookup Project -->
-  <div class="content userInfo">
+  <div class="content userInfo bordered">
     <h3>User Info Lookup Tool</h3>
     <p>Single page web app provide real customers an interface to check their in store points. Built with Django as backend and API with user info as well as admin portal to manage users. PostgreSQL for the database runing on AWS RDs. </p>
+    <figure>
+      <img src="{% static 'img/img_placeholder.jpg' %}" alt="userInfo">
+    </figure>
     <a href="{% url 'users:search' %}?mode=demo" target="_blank" type="button" class="btn btn-danger">View Demo</a>
   </div>
 
   <!-- Youtube Thumbnail Grabber Project -->
-  <div class="content thumbnail-grabber">
+  <div class="content thumbnail-grabber bordered">
     <h3>Youtube Thumbnail Grabber</h3>
     <p>Single page web app to grabber youtube videos. Use Python FastAPI to provide functions and ajax to fetch the thumbnail</p>
     <figure>
+      <img src="{% static 'img/img_placeholder.jpg' %}" alt="thumbnail-grabber">
     </figure>
     <a href="https://thumbnail-grabber.herokuapp.com/" target="_blank" type="button" class="btn btn-info">View Demo</a>
   </div>
 
   <!-- Countdown Timer Project -->
-  <div class="content timer">
+  <div class="content timer bordered">
     <h3>Simple Countdown Timer</h3>
     <p>A simple timer will countdown the time you set, and ring after times up.</p>
     <figure>
+      <img src="{% static 'img/img_placeholder.jpg' %}" alt="timer">
     </figure>
     <a href="http://banana-timer.herokuapp.com/" target="_blank" type="button" class="btn btn-secondary">View Demo</a>
   </div>
